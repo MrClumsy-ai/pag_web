@@ -4,7 +4,7 @@
   --default-border-radius: 1.5vh;
   --default-color: #35592b;
   --header-font-family: "Dunkin Lyons", sans-serif;
-  --p-font-family: arial sans-serif;
+  --p-font-family: helvetica;
 }
 
 /* style */
@@ -26,7 +26,20 @@ body {
 p,
 li {
   font-family: var(--p-font-family);
+  text-align: justify;
+  text-justify: inter-word;
 }
+
+/* 
+
+  h1 = titulo principal
+  h2 = capitulos
+  h3 = principios
+  h4 = x.x
+  h5 = x.x.x
+  h6 = x.x.x. ...
+
+*/
 
 h1,
 h2,
@@ -37,13 +50,17 @@ h6 {
   font-family: var(--header-font-family);
 }
 
+h3 {
+  color: var(--default-color);
+}
+
 #main {
   padding: 0;
 }
 
-/* div1 */
+/* portada */
 
-#div1 {
+#portada {
   text-align: center;
 }
 
@@ -69,21 +86,22 @@ h6 {
   overflow: hidden;
 }
 
-#div1 h6,
-#div1 h1 {
+#portada h6,
+#portada h1 {
   z-index: 1;
   color: white;
 }
 
-#div1 h6 {
+#portada h6 {
   padding-top: 50px;
 }
 
-#div1 p {
+#portada p {
   color: white;
+  text-align: center;
 }
 
-#div1 button {
+#portada button {
   color: white;
   background-color: var(--default-color);
   padding: 2vh;
@@ -91,34 +109,34 @@ h6 {
   border: 0;
 }
 
-/* div2 */
+/* capitulo1 */
 
-#div2 {
+#capitulo1 {
   background-color: white;
 }
 
-#cont {
+#capitulo1 #cont {
   text-align: center;
 }
 
-#div2 #cont img {
+#capitulo1 #cont img {
   padding: 0;
   margin: 0;
   width: 100%;
   max-width: 500px;
 }
 
-#div2 #cont div:nth-child(2) {
+#capitulo1 #cont div:nth-child(2) {
   padding: 50px;
 }
 
-#div2 h4 {
+#capitulo1 h4 {
   text-align: left;
   color: var(--default-color);
   font-weight: bold;
 }
 
-#div2 p {
+#capitulo1 p {
   text-align: justify;
   text-justify: inter-word;
 }
@@ -137,48 +155,6 @@ h6 {
   color: var(--default-color);
 }
 
-/* div3 */
-
-#div3 {
-  background-color: var(--default-color);
-  text-align: center;
-  color: white;
-}
-
-#div3 h3 {
-  padding-top: 100px;
-}
-
-#div3 h5 {
-  background-color: white;
-  color: black;
-  border-radius: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-#div3 h6 {
-  background-color: black;
-  border-radius: 10px;
-}
-
-#div3 p {
-  color: white;
-  padding-bottom: 80px;
-  margin-bottom: 0;
-}
-
-#div3 img {
-  padding: 0;
-  margin: 0;
-  height: 100%;
-}
-
-#div4 {
-  padding: 50px;
-  background-color: white;
-}
-
 .cap-head {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -190,17 +166,11 @@ h6 {
 .cap-head p {
   font-family: var(--header-font-family);
   font-size: larger;
+  text-align: center;
 }
 
 .cap-cont {
   background-color: white;
   color: black;
   padding: 50px;
-}
-
-#cap3cont .row {
-  border: 1px solid;
-  border-radius: 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
