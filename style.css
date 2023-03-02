@@ -4,7 +4,7 @@
   --default-border-radius: 1.5vh;
   --default-color: #35592b;
   --header-font-family: "Dunkin Lyons", sans-serif;
-  --p-font-family: arial;
+  --p-font-family: arial sans-serif;
 }
 
 /* style */
@@ -115,6 +115,7 @@ h6 {
 #div2 h4 {
   text-align: left;
   color: var(--default-color);
+  font-weight: bold;
 }
 
 #div2 p {
@@ -178,7 +179,7 @@ h6 {
   background-color: white;
 }
 
-#capitulo3 {
+.cap-head {
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
@@ -186,7 +187,12 @@ h6 {
   background-color: var(--default-color);
 }
 
-#cap3cont {
+.cap-head p {
+  font-family: var(--header-font-family);
+  font-size: larger;
+}
+
+.cap-cont {
   background-color: white;
   color: black;
   padding: 50px;
