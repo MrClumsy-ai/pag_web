@@ -23,7 +23,8 @@ body {
   background-repeat: no-repeat;
 }
 
-p, li {
+p,
+li {
   font-family: var(--p-font-family);
 }
 
@@ -148,23 +149,19 @@ h6 {
 }
 
 #div3 h5 {
-
   background-color: white;
   color: black;
   border-radius: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-
 }
 
 #div3 h6 {
-
   background-color: black;
   border-radius: 10px;
 }
 
 #div3 p {
-  
   color: white;
   padding-bottom: 80px;
   margin-bottom: 0;
@@ -177,13 +174,11 @@ h6 {
 }
 
 #div4 {
-
   padding: 50px;
   background-color: white;
 }
 
 #capitulo3 {
-
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
@@ -192,17 +187,14 @@ h6 {
 }
 
 #cap3cont {
-
   background-color: white;
   color: black;
   padding: 50px;
 }
 
 #cap3cont .row {
-
   border: 1px solid;
   border-radius: 10px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-
